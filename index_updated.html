@@ -3,63 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desi Gujiya - Homemade Sweets</title>
+  <title>Desi Gujiya</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>🥟 Desi Gujiya</h1>
-    <p>Authentic Homemade Gujiya & Indian Sweets</p>
-    <nav>
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+
+  <!-- Header / Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Desi Gujiya</h1>
+      <p>Authentic Taste of Tradition</p>
+      <a href="#products" class="btn-primary">Explore Products</a>
+      <button id="orderBtn" class="btn-secondary">Order Now</button>
+    </div>
   </header>
 
-  <section id="menu">
-    <h2>Our Menu</h2>
-    <div class="menu-item">
-      <h3>Classic Mawa Gujiya</h3>
-      <p>₹250 / 500gm</p>
-      <button onclick="orderNow('Classic Mawa Gujiya - ₹250/500gm')">Order Now</button>
-    </div>
-    <div class="menu-item">
-      <h3>Coconut Gujiya</h3>
-      <p>₹220 / 500gm</p>
-      <button onclick="orderNow('Coconut Gujiya - ₹220/500gm')">Order Now</button>
-    </div>
-    <div class="menu-item">
-      <h3>Dry Fruit Gujiya</h3>
-      <p>₹300 / 500gm</p>
-      <button onclick="orderNow('Dry Fruit Gujiya - ₹300/500gm')">Order Now</button>
+  <!-- Products Section -->
+  <section id="products" class="products">
+    <h2>Our Specialties</h2>
+    <div class="product-list">
+      <div class="product-card">
+        <img src="https://i.ibb.co/bjBYsbDR/product2-jpg.png" alt="Classic Sweet Gujiya">
+        <h3>Classic Sweet Gujiya (6 Pack)</h3>
+        <p>₹249</p>
+        <button class="btn-primary order-product" data-product="Classic Sweet Gujiya (6 Pack)">Order</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.ibb.co/dwNkCxkV/product3-jpg.png" alt="Festival Pack">
+        <h3>Festival Pack</h3>
+        <p>₹499</p>
+        <button class="btn-primary order-product" data-product="Festival Pack">Order</button>
+      </div>
+      <div class="product-card">
+        <img src="https://i.ibb.co/psGmYN9/product4-jpg.png" alt="Premium Gujiya">
+        <h3>Premium Classic Gujiya</h3>
+        <p>₹349</p>
+        <button class="btn-primary order-product" data-product="Premium Classic Gujiya">Order</button>
+      </div>
     </div>
   </section>
 
-  <section id="about">
+  <!-- About Us Section -->
+  <section id="about" class="about">
     <h2>About Us</h2>
-    <p>
-      At Desi Gujiya, we prepare homemade sweets with love and tradition.  
-      Freshly made to order from our kitchen, bringing authentic taste to your home.  
-    </p>
+    <div class="about-content">
+      <p>
+        At <strong>Desi Gujiya</strong>, we bring you the authentic taste of Indian tradition.  
+        Our gujiyas are handmade with love, stuffed with premium dry fruits and khoya,  
+        ensuring every bite is a festival of flavors.  
+      </p>
+      <p>
+        Based in <b>Samastipur, Bihar</b>, we deliver fresh sweets to your doorstep.  
+        Celebrate your moments with the sweetness of Desi Gujiya!  
+      </p>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>📧 Email: contact@desigujiya.com</p>
-    <p>📱 WhatsApp: <a href="https://wa.me/919142145404" target="_blank">+91 91421 45404</a></p>
-  </section>
+  <!-- Order Popup -->
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Place Your Order</h2>
+      <form id="orderForm">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="Your Phone" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="address" placeholder="Your Address" required>
+        </div>
+        <div class="form-group">
+          <input type="text" name="product" id="productInput" placeholder="Product" readonly required>
+        </div>
+        <div class="form-group">
+          <input type="number" name="quantity" placeholder="Quantity" min="1" required>
+        </div>
+        <button type="submit" class="btn-primary">Submit Order</button>
+      </form>
+      <p id="responseMsg"></p>
+    </div>
+  </div>
 
-  <footer>
-    <p>© 2025 Desi Gujiya. All rights reserved.</p>
+  <!-- Footer -->
+  <footer id="contact">
+    <p>📍 Samastipur, Bishanpur Beri, 848501, Bihar</p>
+    <p>📞 WhatsApp: 9142145404</p>
+    <p>📧 Order Email: desigujiya@gmail.com | ✉️ Contact Email: contact@desigujiya.com</p>
+    <div class="social-links">
+      <a href="https://www.instagram.com/desigujiya/" target="_blank">Instagram</a> |
+      <a href="https://www.facebook.com/profile.php?id=61580450444220" target="_blank">Facebook</a>
+    </div>
+    <p>&copy; 2025 Desi Gujiya. All Rights Reserved.</p>
   </footer>
 
-  <script>
-    function orderNow(item) {
-      let phone = "919142145404"; // updated WhatsApp number
-      let url = `https://wa.me/${phone}?text=Hi, I want to order: ${encodeURIComponent(item)}`;
-      window.open(url, "_blank");
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
