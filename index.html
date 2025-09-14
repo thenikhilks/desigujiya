@@ -3,29 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desi Gujiya - Homemade Sweets</title>
+  <title>Desi Gujiya</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- Navbar -->
   <header>
-    <h1>Desi Gujiya</h1>
-    <p>Fresh, Homemade Gujiyas with Authentic Taste</p>
+    <div class="navbar">
+      <h1>Desi Gujiya</h1>
+      <nav class="nav-links">
+        <a href="#">Menu</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Welcome to <strong>Desi Gujiya</strong>! We bring you the authentic taste of traditional Indian Gujiyas, 
-    prepared fresh at home with love and care. Our mission is to deliver sweetness and joy with every bite.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <h2>Fresh, Homemade Gujiyas — Pure Ghee, Pure Love</h2>
+      <p>Order now for festivals, parties & gifting. Small-batch, handmade each day.</p>
+      <button class="btn btn-orange">Order Now</button>
+      <button class="btn btn-outline">View Menu</button>
+    </div>
   </section>
 
-  <section id="order">
-    <h2>Place Your Order</h2>
-    <p>To order freshly made Gujiyas, just click below and chat with us on WhatsApp.</p>
-    <a class="whatsapp-btn" href="https://wa.me/919142145404" target="_blank">Order on WhatsApp</a>
+  <!-- Products -->
+  <section class="products">
+    <h2>Our Fresh Gujiyas</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://i.ibb.co/vPz0nQz/gujiya-pack.jpg" alt="Mini Pack">
+        <h3>Mini Gujiya Party Pack (20)</h3>
+        <p class="price">₹650</p>
+        <a href="#" class="add-btn">Add to Cart</a>
+      </div>
+      <div class="product-card">
+        <img src="https://i.ibb.co/PMk6bYh/gujiya-box.jpg" alt="Gift Box">
+        <h3>Festive Gift Box (12 Pieces)</h3>
+        <p class="price">₹1200</p>
+        <a href="#" class="add-btn">Add to Cart</a>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Desi Gujiya | contact@desigujiya.com</p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Desi Gujiya</h2>
+    <p>
+      Desi Gujiya brings authentic, small-batch gujiyas made the traditional way using pure ghee and premium ingredients. We specialize in classic fillings plus seasonal flavors — perfect for festivals, parties, and gifting.
+    </p>
+    <div class="badge"><i class="fa-solid fa-star"></i> Prepared in a home kitchen with strict hygiene standards</div>
+    <div class="features">
+      <div class="feature-card">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Made with Love</h3>
+        <p>Every gujiya is handcrafted with recipes passed down through generations.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-seedling"></i>
+        <h3>Pure Ingredients</h3>
+        <p>Only pure ghee, fresh khoya, and premium nuts go into our gujiyas.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-truck"></i>
+        <h3>Fresh Delivery</h3>
+        <p>Delivered daily to maintain the freshness and taste you love.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-shield-heart"></i>
+        <h3>Quality Promise</h3>
+        <p>Strict hygiene standards ensure consistent quality and safety.</p>
+      </div>
+    </div>
+    <div class="commitment">💡 Our Commitment: Fresh Daily · Pure Ghee · Traditional Methods</div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>How can I order?</summary>
+      <p>Place an order via website cart, Instagram DM, or WhatsApp.</p>
+    </details>
+    <details>
+      <summary>Do you ship nationwide?</summary>
+      <p>Yes! We deliver all across India.</p>
+    </details>
+    <details>
+      <summary>What are the payment options?</summary>
+      <p>We accept UPI, Net Banking, Cards, and Cash on Delivery.</p>
+    </details>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div>
+        <h3>Desi Gujiya</h3>
+        <p>Homemade gujiyas · Pure ghee · Freshly made</p>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-phone"></i> +91-XXXXXXXXXX</p>
+        <p><i class="fa-solid fa-envelope"></i> info@desigujiyas.shop</p>
+      </div>
+      <div>
+        <h3>Business Hours</h3>
+        <p>Mon - Sun: 9AM - 8PM</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+        <p><i class="fa-brands fa-facebook"></i> Facebook</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Desi Gujiya · Privacy Policy · Terms of Service · Refund Policy
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
