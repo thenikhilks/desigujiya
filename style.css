@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fff8f0;
+  color: #333;
+}
+header {
+  background: #e85a4f;
+  color: white;
+  padding: 2rem;
+}
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+section {
+  padding: 2rem;
+}
+.whatsapp-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #25d366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.whatsapp-btn:hover {
+  background: #1ebe57;
+}
+footer {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
