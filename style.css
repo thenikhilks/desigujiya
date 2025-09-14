@@ -1,38 +1,77 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset default browser styles */
+* {
   margin: 0;
   padding: 0;
-  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
   background: #fff8f0;
   color: #333;
+  line-height: 1.6;
 }
+
+/* Header */
 header {
-  background: #e85a4f;
+  background: linear-gradient(135deg, #e85a4f, #e63946);
   color: white;
-  padding: 2rem;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
-h1 {
-  margin: 0;
-  font-size: 2.5rem;
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Section styles */
 section {
-  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
+section h2 {
+  font-size: 2rem;
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+/* WhatsApp Button */
 .whatsapp-btn {
   display: inline-block;
-  padding: 10px 20px;
-  background: #25d366;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 12px 24px;
+  font-size: 1.1rem;
   font-weight: bold;
+  color: white;
+  background: #25d366;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s;
 }
+
 .whatsapp-btn:hover {
   background: #1ebe57;
+  transform: scale(1.05);
 }
+
+/* Footer */
 footer {
   background: #333;
   color: white;
-  padding: 1rem;
+  text-align: center;
+  padding: 1.2rem;
   margin-top: 2rem;
 }
