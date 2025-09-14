@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desi Gujiya - Homemade Sweets</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🥟 Desi Gujiya</h1>
+    <p>Authentic Homemade Gujiya & Indian Sweets</p>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+      <h3>Classic Mawa Gujiya</h3>
+      <p>₹250 / 500gm</p>
+      <button onclick="orderNow('Classic Mawa Gujiya - ₹250/500gm')">Order Now</button>
+    </div>
+    <div class="menu-item">
+      <h3>Coconut Gujiya</h3>
+      <p>₹220 / 500gm</p>
+      <button onclick="orderNow('Coconut Gujiya - ₹220/500gm')">Order Now</button>
+    </div>
+    <div class="menu-item">
+      <h3>Dry Fruit Gujiya</h3>
+      <p>₹300 / 500gm</p>
+      <button onclick="orderNow('Dry Fruit Gujiya - ₹300/500gm')">Order Now</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      At Desi Gujiya, we prepare homemade sweets with love and tradition.  
+      Freshly made to order from our kitchen, bringing authentic taste to your home.  
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>📧 Email: contact@desigujiya.com</p>
+    <p>📱 WhatsApp: <a href="https://wa.me/919142145404" target="_blank">+91 91421 45404</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Desi Gujiya. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function orderNow(item) {
+      let phone = "919142145404"; // updated WhatsApp number
+      let url = `https://wa.me/${phone}?text=Hi, I want to order: ${encodeURIComponent(item)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
